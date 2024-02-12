@@ -1,0 +1,47 @@
+package start;
+import java.util.*;
+
+import com.student.manage.Student;
+
+import java.io.*;
+public class Start {
+
+	public static void main(String[] args) throws IOException{
+		// TODO Auto-generated method stub
+		System.out.println("Hello");
+
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		while(true)
+		{
+			System.out.println("1. Enter the Data");
+			System.out.println("2. Get the Data");
+			System.out.println("3.Delete the data");
+			System.out.println("4. Stop----");
+			int n=Integer.parseInt(br.readLine());
+			if(n==1)
+			{
+				System.out.print("Please Enter The id:");
+				int id=Integer.parseInt(br.readLine());
+				String Name=br.readLine();
+				String standard=br.readLine();
+				Student st=new Student(id,Name,standard);
+				System.out.println(st);
+				
+			}
+			else if(n==2)
+			{
+				
+			}
+			else if(n==3)
+			{
+				
+			}
+			else
+			{
+				break;
+			}
+		}
+		System.out.println("Thank you for Using my Application !!!!");
+	}
+
+}

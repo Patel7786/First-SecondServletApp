@@ -1,0 +1,27 @@
+package com.student.manage;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class InsertStudentDao {
+	public static boolean InsertIntoDB(Student st)
+	{
+		try
+		{
+			Connection con=CP.createConnection();
+			String s="insert into Student_manage(City,Name,Standard) values(?,?,?)";
+			PreparedStatement pstmt=con.prepareStatement(s);
+			pstmt.setString(1, st.getCity());
+			pstmt.setString(2, st.getName());
+			pstmt.setString(3, st.getStandard());
+			return true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return false;
+		
+	}
+}

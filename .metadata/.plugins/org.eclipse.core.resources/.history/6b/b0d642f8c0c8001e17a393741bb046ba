@@ -1,0 +1,16 @@
+package com.student.manage;
+
+import com.mysql.jdbc.Connection;
+
+
+public class CP {
+static Connection con;
+	public static Connection createConnection()
+	{
+		Class.forName(com.mysql.jdbc.Driver);
+		user="root";
+		pass="Patel@7786";
+		url="jdbc:mysql://localhost:3306/student_manage";
+		con=DriverManger.getConnection(url,user,pass);
+	}
+}

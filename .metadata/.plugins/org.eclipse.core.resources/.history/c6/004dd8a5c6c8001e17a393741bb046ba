@@ -1,0 +1,9 @@
+package com.student.manage;
+
+public class Student {
+	
+	private String City;
+	private String Name;
+	private String standard;
+	
+}

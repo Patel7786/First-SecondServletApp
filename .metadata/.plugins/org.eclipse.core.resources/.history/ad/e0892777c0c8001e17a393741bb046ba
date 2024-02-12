@@ -1,0 +1,12 @@
+package com.student.manage;
+
+import com.mysql.jdbc.Connection;
+
+public class CP {
+static Connection con;
+	public static Connection createConnection()
+	{
+		class.forName(com.mysql.jdbc.Driver);
+		
+	}
+}
