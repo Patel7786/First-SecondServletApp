@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module StudentManagementApp {
-	requires mysql.connector;
-}
